@@ -94,7 +94,8 @@ body {
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: header style finished*/
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: About style start*/
-.about {
+.about,
+.menu {
     padding: 80px 0;
 }
 .row {
@@ -107,32 +108,71 @@ body {
 .p-25 {
     padding: 25px;
 }
-.about h3 {
+.about h3,
+.p-25 h3 {
     color: rgb(37, 37, 37, 0.7);
     font-size: 30px;
     margin-bottom: 12px;
     font-weight: 700;
 }
-.about h1 {
+.about h1,
+.p-25 h1 {
     font-size: 40px;
     color: #252525;
     font-weight: 700;
     line-height: 40px;
     margin-bottom: 15x;
 }
-.about p {
+.about p,
+.p-25 p {
     font-size: 18px;
     color: #8b8b8b;
     font-weight: 300;
 }
-.about__btn {
+.about__btn,
+.menu__btn {
     margin-top: 35px;
 }
-.about__img {
+.about__img,
+.menu__img {
     width: 100%;
     overflow: hidden;
 }
-.about__img img {
+.about__img img,
+.menu__img img {
     width: 100%;
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: About style finished*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Shop style start*/
+.shop {
+    width: 100%;
+    background: url("./../public/img/bg.jpg");
+    height: 450px;
+    background-attachment: fixed;
+}
+.shop__text {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.shop__text h1 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.shop__text h1 span {
+    text-transform: uppercase;
+}
+.shop__btn {
+    margin: 35px 0;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Shop style finished*/
