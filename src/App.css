@@ -8,7 +8,7 @@
 body {
     font-family: "montserrat", sans-serif;
 }
-
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: header style start*/
 .navbar {
     position: absolute;
     top: 0;
@@ -51,13 +51,13 @@ body {
 .banner__content {
     display: flex;
     align-items: center;
+    color: #fff;
     height: 100vh;
 }
 .container {
     width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
-    color: #fff;
 }
 .banner__text {
     width: 500px;
@@ -92,3 +92,47 @@ body {
 .banner__btn {
     margin: 35px 0;
 }
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: header style finished*/
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: About style start*/
+.about {
+    padding: 80px 0;
+}
+.row {
+    width: 100%;
+    display: flex;
+}
+.col-6 {
+    width: 50%;
+}
+.p-25 {
+    padding: 25px;
+}
+.about h3 {
+    color: rgb(37, 37, 37, 0.7);
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.about h1 {
+    font-size: 40px;
+    color: #252525;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 15x;
+}
+.about p {
+    font-size: 18px;
+    color: #8b8b8b;
+    font-weight: 300;
+}
+.about__btn {
+    margin-top: 35px;
+}
+.about__img {
+    width: 100%;
+    overflow: hidden;
+}
+.about__img img {
+    width: 100%;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: About style finished*/
