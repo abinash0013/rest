@@ -101,6 +101,7 @@ body {
 .row {
     width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
 }
 .col-6 {
     width: 50%;
@@ -176,3 +177,62 @@ body {
     margin: 35px 0;
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: Shop style finished*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Clients style start*/
+.clients {
+    width: 100%;
+    padding: 100px 0;
+    background: url(./../public/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.clients .col-3 {
+    width: 25%;
+}
+.client {
+    text-align: center;
+}
+.client h1 {
+    font-size: 35px;
+}
+.client p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Clients style finished*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Prices style start*/
+.prices {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+}
+.col-4 {
+    width: 33.33%;
+}
+.price {
+    padding: 20px;
+}
+.price__img {
+    width: 100%;
+}
+.price__img img {
+    width: 250px;
+}
+.price__heading {
+    padding: 25px;
+}
+.price__text {
+    margin: 15px 0;
+    color: #888;
+    font-size: 18px;
+    font-weight: 300;
+}
+.price_rs {
+    font-size: 30px;
+    margin-top: 15px;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Prices style finished*/
