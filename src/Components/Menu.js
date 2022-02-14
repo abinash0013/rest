@@ -10,18 +10,21 @@ const Menu = () => {
                             <img src="/img/pizza.jpg" />
                         </div>
                     </div>
-                    <div className="col-6 p-25">
-                        <h3>The Pizza Menu</h3>
-                        <h1>CHICACO THIN CRUST</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Maxime mollitia, molestiae quas vel sint
-                            consequuntur voluptatum molestiae quas.
-                        </p>
-                        <div className="menu__btn">
-                            <a href="#" className="btn btn-smart">
-                                View More
-                            </a>
+                    <div className="col-6">
+                        <div className="px-25 pt-25">
+                            <h3>The Pizza Menu</h3>
+                            <h1>CHICACO THIN CRUST</h1>
+                            <p className="text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Maxime mollitia, molestiae
+                                quas vel sint consequuntur voluptatum molestiae
+                                quas.
+                            </p>
+                            <div className="menu__btn">
+                                <a href="#" className="btn btn-smart">
+                                    View More
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

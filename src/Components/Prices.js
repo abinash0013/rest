@@ -4,7 +4,7 @@ const Prices = () => {
     return (
         <div className="prices">
             <div className="container">
-                <div className="row">
+                <div className="prices-row">
                     <div className="col-4">
                         <div className="price">
                             <div className="price__img">
@@ -47,8 +47,6 @@ const Prices = () => {
                             <p className="price_rs">$ 50.00/-</p>
                         </div>
                     </div>
-                </div>
-                <div className="row">
                     <div className="col-4">
                         <div className="price">
                             <div className="price__img">

@@ -1,3 +1,4 @@
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: global style start*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -8,6 +9,21 @@
 body {
     font-family: "montserrat", sans-serif;
 }
+.text {
+    margin: 10px 0;
+}
+.btn-smart {
+    background: #ff454f;
+    border: 1px solid #ff454f;
+    transition: all ease 0.3s;
+}
+
+.btn-smart:hover {
+    border: 1px solid #ff454f;
+    background: transparent;
+    color: #ff454f;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: global style finished*/
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: header style start*/
 .navbar {
     position: absolute;
@@ -21,6 +37,14 @@ body {
     align-items: center;
     margin: 0 auto;
     width: 1200px;
+}
+.navbar {
+    border-bottom: 2px solid #413f409f;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.527);
+    transition: all ease 0.6s;
+}
+.navbar__ul a:hover {
+    color: #ff454f;
 }
 .logo {
     width: 40%;
@@ -86,13 +110,11 @@ body {
     font-size: 15px;
     padding: 20px 40px;
 }
-.btn-smart {
-    background: rgba(255, 69, 79);
-}
 .banner__btn {
-    margin: 35px 0;
+    margin: 45px 0;
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: header style finished*/
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: About style start*/
 .about,
 .menu {
@@ -101,14 +123,20 @@ body {
 .row {
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .col-6 {
     width: 50%;
 }
-.p-25 {
-    padding: 25px;
+.px-25 {
+    padding: 0 25px;
 }
+.pb-25 {
+    padding-bottom: 60px;
+}
+/* .pt-25 {
+    padding-top: 40px;
+} */
 .about h3,
 .p-25 h3 {
     color: rgb(37, 37, 37, 0.7);
@@ -169,7 +197,6 @@ body {
     font-style: normal;
     letter-spacing: 2px;
 }
-
 .shop__text h1 span {
     text-transform: uppercase;
 }
@@ -177,6 +204,27 @@ body {
     margin: 35px 0;
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: Shop style finished*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Menu style start*/
+.menu h3 {
+    color: rgb(37, 37, 37, 0.7);
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.menu h1 {
+    font-size: 40px;
+    color: #252525;
+    font-weight: 700;
+    line-height: 40px;
+}
+.menu p,
+.p-25 p {
+    font-size: 18px;
+    color: #8b8b8b;
+    font-weight: 300;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: Menu style start*/
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: Clients style start*/
 .clients {
@@ -235,4 +283,188 @@ body {
     font-size: 30px;
     margin-top: 15px;
 }
+.prices-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: Prices style finished*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: footer style finished*/
+.footer {
+    width: 100%;
+    padding: 15px 0;
+    background: url(./../public/img/bg.jpg);
+    color: #fff;
+    width: 100%;
+}
+.footer-content {
+    text-align: center;
+    width: 100%;
+}
+.footer-content span {
+    color: #ff454f;
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: footer style finished*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: media query style start*/
+@media (max-width: 1250px) {
+    .container {
+        width: 950px;
+    }
+    .navbar__text {
+        width: 950px;
+    }
+}
+@media (max-width: 1050px) {
+    .container {
+        width: 850px;
+    }
+    .navbar__text {
+        width: 100%;
+    }
+    .banner__text {
+        width: 650px;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        width: 700px;
+    }
+    .banner__text {
+        width: 100%;
+    }
+    .banner__text h3 {
+        font-size: 40px;
+    }
+    .banner__text h1 {
+        margin: 10px 0;
+    }
+    .banner__text p {
+        margin: 10px 0;
+    }
+    .price {
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .col-3,
+    .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        width: 700px;
+    }
+    .navbar__text {
+        width: 100%;
+    }
+    .banner__text {
+        width: 100%;
+        text-align: center;
+    }
+    .banner__text h3 {
+        font-size: 35px;
+    }
+    .banner__text h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .banner__text p {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .col-4 {
+        width: 50%;
+    }
+}
+@media (max-width: 720px) {
+    .container {
+        width: 600px;
+    }
+}
+@media (max-width: 675px) {
+    .container {
+        width: 520px;
+    }
+    .price {
+        padding: 0;
+    }
+}
+@media (max-width: 550px) {
+    .navbar__ul {
+        display: none;
+    }
+    .container {
+        width: 420px;
+    }
+    .banner__text h3 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .banner__text h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+    .banner__text p {
+        font-size: 15px;
+        margin: 20px 0;
+        letter-spacing: 1px;
+    }
+    .about h1,
+    .menu h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .shop__text {
+        width: 350px;
+    }
+    .shop__text h1 {
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .shop__text h1 span {
+        text-transform: none;
+    }
+    .about h1,
+    .p-25 h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .clients .col-3 {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .col-4 {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .container {
+        width: 350px;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        width: 275px;
+    }
+    .shop__text {
+        width: 290px;
+    }
+    .about h3,
+    menu h3 {
+        margin-bottom: 9px;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        width: 275px;
+    }
+    .shop__text {
+        width: 275px;
+    }
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: media query style finished*/
