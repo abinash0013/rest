@@ -1,4 +1,5 @@
 import React from "react";
+import leftMenuImage from "./../img/pizza.jpg";
 
 const Menu = () => {
     return (
@@ -7,7 +8,7 @@ const Menu = () => {
                 <div className="row">
                     <div className="col-6">
                         <div className="menu__img">
-                            <img src="/img/pizza.jpg" />
+                            <img src={leftMenuImage} />
                         </div>
                     </div>
                     <div className="col-6">

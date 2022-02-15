@@ -1,31 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { Nav } from "react-bootstrap";
+import logo from "./../img/logo.png";
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false);
+    const changeBackground = () => {
+        if (window.scrollY >= 50) {
+            setNav(true);
+        } else {
+            setNav(false);
+        }
+    };
+    window.addEventListener("scroll", changeBackground);
+
     return (
-        <Nav className="navbar">
+        <Nav className={nav ? "navbar active" : "navbar"}>
+            {/* <Nav className="navbar"> */}
             <div className="container">
                 <div className="navbar__text">
                     <div className="logo">
-                        <img src="/img/logo.png" alt="logo" />
+                        <img src={logo} alt="logo" />
                     </div>
-                    {/* <ul className="navbar__ul">
+                    <ul className="navbar__ul">
                         <li>
-                            <a href="#">Home</a>
+                            <Link smooth={true} duration={1000} to="#">
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">Menu</a>
+                            <Link smooth={true} duration={1000} to="#">
+                                Menu
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">Shop</a>
+                            <Link smooth={true} duration={1000} to="#">
+                                Shop
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">News</a>
+                            <Link smooth={true} duration={1000} to="#">
+                                News
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">Contact </a>
+                            <Link smooth={true} duration={1000} to="#">
+                                Contact{" "}
+                            </Link>
                         </li>
-                    </ul> */}
+                    </ul>
+                    <input className="menu-btn" type="checkbox" id="menu-btn" />
+                    <label className="menu-icon" for="menu-btn">
+                        <span className="nav-icon"></span>
+                    </label>
                 </div>
             </div>
         </Nav>
