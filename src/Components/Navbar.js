@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Nav } from "react-bootstrap";
+import { FaBars, FaRegWindowClose } from "react-icons/fa";
+
 import logo from "./../img/logo.png";
 
 const Navbar = () => {
@@ -15,13 +17,22 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground);
 
     return (
-        <Nav className={nav ? "navbar active" : "navbar"}>
-            {/* <Nav className="navbar"> */}
+        // <Nav className={nav ? "navbar active" : "navbar"}>
+        <Nav className="navbar">
             <div className="container">
                 <div className="navbar__text">
-                    <div className="logo">
+                    <input type="checkbox" id="check" />
+                    <label for="check">
+                        <i class="fa fa-bars" id="btn">
+                            <FaBars />
+                        </i>
+                        <i class="fa fa-times" id="cancel">
+                            <FaRegWindowClose />
+                        </i>
+                    </label>
+                    <label className="logo">
                         <img src={logo} alt="logo" />
-                    </div>
+                    </label>
                     <ul className="navbar__ul">
                         <li>
                             <Link smooth={true} duration={1000} to="#">
@@ -45,14 +56,10 @@ const Navbar = () => {
                         </li>
                         <li>
                             <Link smooth={true} duration={1000} to="#">
-                                Contact{" "}
+                                Contact
                             </Link>
                         </li>
                     </ul>
-                    <input className="menu-btn" type="checkbox" id="menu-btn" />
-                    <label className="menu-icon" for="menu-btn">
-                        <span className="nav-icon"></span>
-                    </label>
                 </div>
             </div>
         </Nav>
